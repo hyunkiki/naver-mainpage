@@ -19,6 +19,12 @@ body {
     justify-content: center; /* 좌우 중앙 */
     align-items: center;
     text-align: center;
+    .intro_exp {
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+      padding-bottom: 64px;
+    }
     .intro_tit {
       font-size: 60px;
       color: white;

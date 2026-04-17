@@ -21,6 +21,12 @@ body {
   align-items: center;
   text-align: center;
 }
+#main .naver_intro .intro_exp {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 64px;
+}
 #main .naver_intro .intro_tit {
   font-size: 60px;
   color: white;
