@@ -31,35 +31,95 @@ body {
   font-size: 60px;
   color: white;
 }
+#main .naver_intro .dots_wr {
+  padding-top: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .naver_intro .dots_wr .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 24px;
+}
+#main .naver_intro .dots_wr .acitve {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: #fff solid 3px;
+  background-color: transparent;
+}
 #main .naver_service {
   width: 100%;
   height: 1080px;
   background-color: #fff;
 }
-#main .naver_service .service_tit {
+#main .naver_service .tit_box {
+  display: flex;
+  align-items: flex-end;
+}
+#main .naver_service .tit_box .service_tit {
   padding-top: 64px;
+}
+#main .naver_service .tit_box .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #03a94d;
 }
 #main .naver_tech {
   width: 100%;
   height: 1080px;
   background-color: #fff;
 }
-#main .naver_tech .tech_tit {
+#main .naver_tech .tit_box {
+  display: flex;
+  align-items: flex-end;
+}
+#main .naver_tech .tit_box .tech_tit {
   padding-top: 64px;
+}
+#main .naver_tech .tit_box .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #03a94d;
 }
 #main .naver_value {
   width: 100%;
   height: 1080px;
   background-color: #f0f9f4;
 }
-#main .naver_value .value_tit {
+#main .naver_value .tit_box {
+  display: flex;
+  align-items: flex-end;
+}
+#main .naver_value .tit_box .value_tit {
   padding-top: 64px;
+}
+#main .naver_value .tit_box .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #03a94d;
 }
 #main .naver_news {
   width: 100%;
   height: 1080px;
   background-color: #ceeade;
 }
-#main .naver_news .news_tit {
+#main .naver_news .tit_box {
+  display: flex;
+  align-items: flex-end;
+}
+#main .naver_news .tit_box .news_tit {
   padding-top: 64px;
+}
+#main .naver_news .tit_box .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #03a94d;
 }/*# sourceMappingURL=comm.css.map */
