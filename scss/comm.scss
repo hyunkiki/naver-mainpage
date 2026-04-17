@@ -9,7 +9,6 @@ body {
 .inner {
   margin: 0 108px;
 }
-
 #main {
   .naver_intro {
     width: 100%;
@@ -19,6 +18,75 @@ body {
     justify-content: center; /* 좌우 중앙 */
     align-items: center;
     text-align: center;
+    #main_header {
+      position: absolute; /* 중요: 일반적인 흐름에서 벗어나 공중에 뜸 */
+      top: 0; /* 위쪽에 딱 붙임 */
+      left: 0;
+      width: 100%; /* 가로로 길게 늘림 */
+      z-index: 100; /* 다른 요소보다 무조건 위에 보이게 함 */
+      display: flex;
+      justify-content: space-between;
+      padding: 64px 108px;
+      box-sizing: border-box; /* 패딩 때문에 가로가 늘어나지 않게 함 */
+      align-items: center;
+      //   .white_logo_img {
+      //     width: ;
+      //     height: auto;
+      //   }
+      .gnb_wr {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        .gnb_lst {
+          width: 150px;
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+      .right_box {
+        display: flex;
+        gap: 24px;
+        .global_box {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .la-globe {
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+        .hamberger_box {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-color: rgb(255, 255, 255, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .hamberger_menu {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 4px;
+            .dot {
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background-color: #000000;
+            }
+          }
+        }
+      }
+    }
     .intro_exp {
       font-size: 28px;
       font-weight: 500;
