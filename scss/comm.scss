@@ -120,13 +120,16 @@ body {
   }
   .naver_service {
     width: 100%;
-    height: 1080px;
+    height: 100%;
     background-color: #fff;
+    padding: 64px 0;
     .tit_box {
       display: flex;
       align-items: flex-end;
-      .service_tit {
-        padding-top: 64px;
+      padding-bottom: 32px;
+      .service_min_tit {
+        font-size: 32px;
+        font-weight: bold;
       }
       .dot {
         width: 10px;
@@ -135,17 +138,75 @@ body {
         background-color: #03a94d;
       }
     }
+    .service_tit {
+      font-size: 48px;
+      font-weight: bold;
+      padding-bottom: 32px;
+    }
+    .service_exp {
+      font-size: 28px;
+      font-weight: 500;
+      color: #434343;
+    }
+    .sub_txt_box {
+      display: flex;
+      justify-content: space-between;
+      .more_btn {
+        color: #ffffff;
+        width: 240px;
+        height: 70px;
+        background-color: #1b326b;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        gap: 24px;
+        &::after {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          color: #ffffff;
+          content: "\f061";
+          font-size: 24px;
+        }
+      }
+    }
+    .card_wr {
+      list-style-type: none;
+      display: flex;
+      width: 100%;
+      height: 600px;
+      padding: 0;
+      margin: 0;
+      gap: 16px;
+      padding-top: 64px;
+      .card_lst {
+        flex: 1; // 기본적으로는 1의 비율
+        overflow: hidden; // 이미지가 넘치지 않게
+        border-radius: 20px; // 모서리 둥글게
+        &:first-child {
+          flex: 5; // 첫 번째 이미지 비중을 크게 설정
+        }
+        .card_img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
   }
   .naver_tech {
     width: 100%;
-    height: 1080px;
+    height: 100%;
     background-color: #fff;
+    padding: 64px 0;
     .tit_box {
       display: flex;
       align-items: flex-end;
-      .tech_tit {
-        padding-top: 64px;
-      }
+      // .tech_tit {
+      //   padding-top: 64px;
+      // }
       .dot {
         width: 10px;
         height: 10px;
@@ -156,14 +217,15 @@ body {
   }
   .naver_value {
     width: 100%;
-    height: 1080px;
+    height: 100%;
     background-color: #f0f9f4;
+    padding: 64px 0;
     .tit_box {
       display: flex;
       align-items: flex-end;
-      .value_tit {
-        padding-top: 64px;
-      }
+      // .value_tit {
+      //   padding-top: 64px;
+      // }
       .dot {
         width: 10px;
         height: 10px;
@@ -174,14 +236,15 @@ body {
   }
   .naver_news {
     width: 100%;
-    height: 1080px;
+    height: 100%;
     background-color: #ceeade;
+    padding: 64px 0;
     .tit_box {
       display: flex;
       align-items: flex-end;
-      .news_tit {
-        padding-top: 64px;
-      }
+      // .news_tit {
+      //   padding-top: 64px;
+      // }
       .dot {
         width: 10px;
         height: 10px;
@@ -190,4 +253,10 @@ body {
       }
     }
   }
+}
+#footer {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  padding: 64px 0;
 }
