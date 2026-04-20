@@ -122,16 +122,16 @@ body {
   background-color: #fff;
   padding: 64px 0;
 }
-#main .naver_service .tit_box {
+#main .naver_service .min_tit_box {
   display: flex;
   align-items: flex-end;
   padding-bottom: 32px;
 }
-#main .naver_service .tit_box .service_min_tit {
+#main .naver_service .min_tit_box .service_min_tit {
   font-size: 32px;
   font-weight: bold;
 }
-#main .naver_service .tit_box .dot {
+#main .naver_service .min_tit_box .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -216,17 +216,15 @@ body {
   height: 100%;
   gap: 64px;
 }
-#main .naver_service .card_wr .card_lst .card_txt_box .card_tit {
-  color: #fff;
-  font-size: 48px;
-  font-weight: bold;
-}
 #main .naver_service .card_wr .card_lst .card_txt_box .card_exp {
   color: #fff;
   font-size: 28px;
   font-size: 500;
   text-align: center;
   line-height: 2;
+}
+#main .naver_service .card_wr .card_lst .card_txt_box .hide {
+  display: none;
 }
 #main .naver_service .card_wr .card_lst .card_txt_box .more_link {
   text-decoration: none;
@@ -265,21 +263,109 @@ body {
   background: url(/img/long_arrow.png);
   background-size: 100%;
 }
+#main .naver_service .card_wr .card_lst .card_txt_box .link_hide {
+  display: none;
+}
+#main .naver_service .card_wr .card_lst .card_tit {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+}
+#main .naver_service .card_wr .card_lst:first-child .card_tit {
+  font-size: 48px;
+  font-weight: bold;
+}
 #main .naver_tech {
   width: 100%;
   height: 100%;
   background-color: #fff;
   padding: 64px 0;
 }
-#main .naver_tech .tit_box {
+#main .naver_tech .min_tit_box {
   display: flex;
   align-items: flex-end;
+  padding-bottom: 32px;
 }
-#main .naver_tech .tit_box .dot {
+#main .naver_tech .min_tit_box .tech_min_tit {
+  font-size: 32px;
+}
+#main .naver_tech .min_tit_box .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #03a94d;
+}
+#main .naver_tech .tech_menu_wr {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+#main .naver_tech .tech_menu_wr .tech_tit {
+  font-size: 48px;
+}
+#main .naver_tech .tech_menu_wr .tech_menu_box {
+  list-style-type: none;
+  display: flex;
+  gap: 64px;
+}
+#main .naver_tech .tech_menu_wr .tech_menu_box .menu_lst {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#main .naver_tech .tech_menu_wr .tech_menu_box .menu_lst .eng_name {
+  color: #afafaf;
+}
+#main .naver_tech .tech_menu_wr .tech_menu_box .menu_lst:first-child .kor_name::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #000;
+}
+#main .naver_tech .tech_line {
+  margin: 64px 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3019607843);
+}
+#main .naver_tech .tech_info {
+  display: flex;
+  justify-content: space-between;
+}
+#main .naver_tech .tech_info .left_box {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+#main .naver_tech .tech_info .left_box .tech_exp {
+  font-size: 28px;
+  color: #434343;
+  font-weight: normal;
+}
+#main .naver_tech .tech_info .left_box .more_btn {
+  color: #ffffff;
+  width: 240px;
+  height: 70px;
+  background-color: #1b326b;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  gap: 24px;
+}
+#main .naver_tech .tech_info .left_box .more_btn::after {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  color: #ffffff;
+  content: "\f061";
+  font-size: 24px;
+}
+#main .naver_tech .tech_info .tech_img {
+  border-radius: 10px;
 }
 #main .naver_value {
   width: 100%;
@@ -287,15 +373,19 @@ body {
   background-color: #f0f9f4;
   padding: 64px 0;
 }
-#main .naver_value .tit_box {
+#main .naver_value .min_tit_box {
   display: flex;
   align-items: flex-end;
+  padding-bottom: 32px;
 }
-#main .naver_value .tit_box .dot {
+#main .naver_value .min_tit_box .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #03a94d;
+}
+#main .naver_value .value_tit {
+  font-size: 48px;
 }
 #main .naver_news {
   width: 100%;
